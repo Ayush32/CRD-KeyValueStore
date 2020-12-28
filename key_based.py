@@ -65,17 +65,26 @@ def delete(key):
     if key not in dataStorage:
         print("Error: The key is not exists in Database. Please enter a valid key!!!!")
     else:
-       c = dataStorage[key]
-       if (c[1] != 0):
+        c = dataStorage[key]
+        if (c[1] != 0):
            
            #comapring the current time with expiry time
            
-           if (time.time() < c[1]):
+            if(time.time() < c[1]):
                del dataStorage[key]
                print("$ Hurray Key is successfully delete $")
-           else:
+            else:
             # Error Message
                print("Error: time-to-live of", key, "has expired")
+        else:
+            del dataStorage[key]
+            print("Key is Successfully Deleted")
+            
+
+############## Delete Operation Complete ################
+
+
+            
                
                
         
