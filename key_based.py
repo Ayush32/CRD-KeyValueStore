@@ -56,7 +56,16 @@ def read(key):
             return string
         
         
-########## READ OPERATION COMPLETE ##########################
+############### READ OPERATION COMPLETE #################
+
+################ DELETE OPERATION ######################
+
+def delete(key):
+    # error message when key is not present
+    if key not in dataStorage:
+        
+
+
             
 
               
