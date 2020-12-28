@@ -30,8 +30,31 @@ def create(key,value,timeout = 0):
                 print("Error: Memory Limit Exceeded!!!!!!")
                 
         else:
-            print("error: Invalid Key_Name!! Key name must contain only alphabets and no special characters or numbers")
+            print("Error: Invalid Key_Name!! Key name must contain only alphabets and no special characters or numbers")
             
-############### crate opeartion function end #####################
+############### Crete opeartion function end #####################
+
+############### FOR READ OPERATION ###################
+
+def read(key):
+    if key not in dataStorage:
+        # error message displayed  when the key is not in dictionary for read.
+        print("Error: given key does not exist in database. Please enter a valid key")
+        
+    else:
+        c = dataStorage[key]
+        if(c[1] != 0):
+            #comparing the present time with expiry time
+            if(time.time() < c[1]):
+                #for returning the key value pair like jsonObject i.e "key_name: value"
+                string = str(key) + ":" + str(c[0])
+                return string;
+            else:
+                print("Error: time-to-live of",key," has expired")
+        else:
+            string = str(key) + ":" + str(c[0])
+            return string
+            
+
               
 
