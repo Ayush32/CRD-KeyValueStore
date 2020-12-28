@@ -54,6 +54,9 @@ def read(key):
         else:
             string = str(key) + ":" + str(c[0])
             return string
+        
+        
+########## READ OPERATION COMPLETE ##########################
             
 
               
