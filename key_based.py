@@ -38,7 +38,7 @@ def create(key,value,timeout = 0):
 
 def read(key):
     if key not in dataStorage:
-        # error message displayed  when the key is not in dictionary for read.
+        # error message displayed  when the key is not in dictionary for read..
         print("Error: given key does not exist in database. Please enter a valid key")
         
     else:
