@@ -91,11 +91,31 @@ def modify(key,value):
     
     c = dataStorage[key]
     if (c[1] != 0):
-        if (time.time() < b[1]):
+        if (time.time() < c[1]):
             if (key not in dataStorage):
                 print("Error: Given Key Does not exist in Database. Please enter a valid key")
             else:
-                l = []
+                z = []
+                z.append(value)
+                z.append(c[1])
+                dataStorage[key] = 1
+        else:
+            ## error message
+            print("Error: time-to-live",key, "has expired")
+            
+    else:
+        if(key not in dataStorage):
+            # error message when key is not present in dictionary
+            print("Error: given key does not exist in database. Please enter a valid key")
+            
+        else:
+            z = []
+            z.append(value)
+            z.append(c[1])
+            dataStorage[key] = 1
+            
+            
+############### MODIFY OPERATION END  ######################
                 
     
 
