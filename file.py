@@ -8,7 +8,7 @@ dataStorage = {}  #dictionary in which we store data
 
 # for create operation we use
 
-############## Create ###############
+############## Create Opeartion ###############
 
 def create(key,value,timeout = 0):
     if key in dataStorage:
@@ -16,7 +16,7 @@ def create(key,value,timeout = 0):
         print("error: this key is already exist!! Please try again")
         
     else:
-        if(key.isAlpha()):
+        if(key.isalpha()):
             if(len(dataStorage) < (1024*1024*1024) and value <= (16*1024*1024)): # constraints range for file less than 1Gb and jsonObject value less than 16KB
                 if(timeout == 0):
                     z = [value,timeout]
@@ -75,8 +75,9 @@ def delete(key):
                print("$ Hurray Key is successfully delete $")
             else:
             # Error Message
-               print("Error: time-to-live of", key, "has expired")
+               print("Error: time-to-live of","Key->",key, "has expired")
         else:
+            ## key is successfully deleted
             del dataStorage[key]
             print("Key is Successfully Deleted")
             
@@ -85,7 +86,7 @@ def delete(key):
 
 #################### I USING EXTRA MODIFY OPEARTION OF MODIFY IN ORDER TO CHANGE THE VALUE OF KEY BEFORE ITS EXPIRY TIME IF PROVIDED 
 
-##################### FOR MODIFY OPERATION
+##################### FOR MODIFY OPERATION ################
 
 def modify(key,value):
     
@@ -98,7 +99,7 @@ def modify(key,value):
                 z = []
                 z.append(value)
                 z.append(c[1])
-                dataStorage[key] = 1
+                dataStorage[key] = z
         else:
             ## error message
             print("Error: time-to-live",key, "has expired")
@@ -112,7 +113,7 @@ def modify(key,value):
             z = []
             z.append(value)
             z.append(c[1])
-            dataStorage[key] = 1
+            dataStorage[key] = z
             
             
 ############### MODIFY OPERATION END  ######################
