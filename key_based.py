@@ -83,6 +83,22 @@ def delete(key):
 
 ############## Delete Operation Complete ################
 
+#################### I USING EXTRA MODIFY OPEARTION OF MODIFY IN ORDER TO CHANGE THE VALUE OF KEY BEFORE ITS EXPIRY TIME IF PROVIDED 
+
+##################### FOR MODIFY OPERATION
+
+def modify(key,value):
+    
+    c = dataStorage[key]
+    if (c[1] != 0):
+        if (time.time() < b[1]):
+            if (key not in dataStorage):
+                print("Error: Given Key Does not exist in Database. Please enter a valid key")
+            else:
+                l = []
+                
+    
+
 
             
                
