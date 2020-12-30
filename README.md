@@ -1,4 +1,9 @@
 # CRD-operations-of-a-file-based-key-value-data-store
+
+### See the Screenshot there are the commands to demonstrate how to access and perform operations on a main file.
+* Run File.py
+* Import the file.
+
 ## Screenshot
 
 <img alt="GIF" height= 400 src="https://github.com/Ayush32/CRD-KeyValueStore/blob/master/githubImages/capture3.png" /> <img alt="GIF" height= 400 src="https://github.com/Ayush32/CRD-KeyValueStore/blob/master/githubImages/Capture2.png" /> 
