@@ -1,7 +1,7 @@
 # CRD-operations-of-a-file-based-key-value-data-store
 
 ### See the Screenshot there are the commands to demonstrate how to access and perform operations on a main file.
-* Run File.py
+1 Run File.py
 * Import the file.
 
 ## Screenshot
