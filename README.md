@@ -1,20 +1,12 @@
 # CRD-operations-of-a-file-based-key-value-data-store
 ## Screenshot
 
-
-<<<<<<< HEAD
-## Screenshot
-<img  height= 200 src="https://github.com/Ayush32/CRD-KeyValueStore/blob/master/githubImages/Capture.PNG" />
-=======
 <img alt="GIF" height= 400 src="https://github.com/Ayush32/CRD-KeyValueStore/blob/master/githubImages/capture3.png" /> <img alt="GIF" height= 400 src="https://github.com/Ayush32/CRD-KeyValueStore/blob/master/githubImages/Capture2.png" /> 
->>>>>>> 2c500613bc738af41bbee87aba2bd5ba06917f91
+
 
 ---
 ###  is a file which can be exposed as a library that supports the basic CRD(create, read, write) operations. Data store is meant to local storage for one single process on single laptop
 
-<<<<<<< HEAD
-1. 
-=======
 1. It can be initialized using an optional file path. If one is not provided, it will reliably create itself in a reasonable location on the laptop.
 
 2. A new key-value pair can be added to the data store using the Create operation. The key is always a string - capped at 32chars. The value is always a JSON object - capped at 16KB.
@@ -34,6 +26,3 @@
 1. The file size never exceeds 1GB
 2. More than one client process cannot be allowed to use the same file as a data store at any given time.
 3. A client process si allowed to access the data store using multiple threads, If it desires to. the data store must therefore be thread-safe.
-
-
->>>>>>> 2c500613bc738af41bbee87aba2bd5ba06917f91
