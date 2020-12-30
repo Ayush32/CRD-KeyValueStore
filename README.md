@@ -1,7 +1,8 @@
 # CRD-operations-of-a-file-based-key-value-data-store
 
-<img alt="GIF" height= 400 src="https://github.com/Ayush32/CRD-KeyValueStore/blob/master/githubImages/Capture2.png" />
+<img alt="GIF" height= 400 src="https://github.com/Ayush32/CRD-KeyValueStore/blob/master/githubImages/Capture2.png" /> <img alt="GIF" height= 400 src="https://github.com/Ayush32/CRD-KeyValueStore/blob/master/githubImages/Capture1.png" />
 
+ 
 
 
 ---
